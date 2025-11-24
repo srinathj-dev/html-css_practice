@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="icon" href="https://img.icons8.com/scribby/50/checkmark.png" />
+  <link rel="icon" href="https://img.icons8.com/scribby/50/checkmark.png" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,17 +18,25 @@
 <body>
   <div class="bodyClass">
     <header>
-      <div class="pHead">
-        <h4>SrinathJ<span>/Dev</span></h4>
+      <div>
+      <div class="">
+        <h4 class="pHead">SrinathJ<span>/Dev</span></h4>
       </div>
-      <nav>
-        <a href="index.html" class="default-nav">Home</a>
-        <a href="#aboutMe">About</a>
-        <a href="#projects">Projects</a>
-      </nav>
-      <a href="#contact">
+      </div>
+        <div class="threeMenu">
+          <input type="checkbox" id="menu-bar">
+          <label for="menu-bar">Menu</label>
+          <nav class="navBar">
+            <a href="index.html" class="default-nav">Home</a>
+            <a href="#aboutMe">About</a>
+            <a href="#projectsTitle">Projects</a>
+            <a class="cName" href="#contact">contact</a>
+          </nav>
+        </div>
+      <a href="#contact" class="contact">
         <div class="contact" href="#contact"><img class="cImg"
-            src="https://framerusercontent.com/images/y7AJDvszhzacJVCt3lE8xkNyDY.svg" alt="contact icon missing"></div>
+            src="https://framerusercontent.com/images/y7AJDvszhzacJVCt3lE8xkNyDY.svg" alt="contact icon missing">
+        </div>
       </a>
     </header>
     <main>
@@ -60,7 +68,7 @@
         </section>
         <section class="pSection">
           <div>
-            <h2 class="projectsTitle">Projects<span>.</span></h2>
+            <h2 class="projectsTitle" id="projectsTitle">Projects<span>.</span></h2>
           </div>
           <div class="projects" id="projects">
             <div class="projPubPols">
@@ -80,7 +88,7 @@
                   </a>
                 </div>
                 <div>
-                  <p class="pDisc">public pools is used to know the public opinons</p>
+                  <h3 class="pDisc">public pools is used to know the public opinons</h3>
                 </div>
               </div>
             </div>
@@ -197,7 +205,7 @@
                           <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                       </div>
-                      <p>learnt about git <Span>&</Span>github, done 2 assignments </p>
+                      <p>learnt about git <span>&</span>github, done 2 assignments </p>
                     </div>
                   </div>
                   <div>
@@ -226,8 +234,10 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
         </section>
-        <section class="sec-skills">
+        <section class="secSkills">
           <div>
             <h2 class="skillsH">Skills<span>.</span></h2>
           </div>
@@ -345,13 +355,13 @@
           </div>
         </div>
         <div class="copRights">
-          <div">
+          <div>
             <p>©2023 All Rights Reserved.</p>
             <p>Made with 💜 by Juluri Sai Srinath</p>
+          </div>
         </div>
       </div>
-  </div>
-  </footer>
+    </footer>
   </div>
 </body>
 
