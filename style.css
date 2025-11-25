@@ -780,11 +780,12 @@ footer {
     display: flex;
     flex-basis: auto;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     height: 40px;
     /* width: 385px; */
     column-gap: 15px;
-    align-content: center;
-    align-items: center;
+    
   }
 
   .gITButton {
@@ -1033,10 +1034,9 @@ footer {
 
   .skills {
     align-items: center;
-    display: flex;
-    flex: none;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 10px;
     height: auto;
     justify-content: space-between;
@@ -1052,13 +1052,17 @@ footer {
     line-height: 34px;
   }
 
-  .webDesign,
-  .Frontend,
+  .webDesign{
+    grid-area: 1 1 2 2;
+    gap: 20px
+  }
+  .Frontend{
+    grid-area: 1 2 2 2;
+    gap: 20px
+  }
   .Backend,
   .softSkills {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+    grid-column: auto / auto;
   }
 
   .wDP,
@@ -1144,6 +1148,14 @@ footer {
     font-weight: 600;
     line-height: 26px;
     text-align: left;
+  }
+
+  .btnRw{
+    display: flex;
+    flex-basis: auto;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center; 
   }
 
   .copRights {
