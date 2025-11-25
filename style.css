@@ -15,7 +15,7 @@ body {
 }
 
 .bodyClass {
-  width: 97%;
+  width: 1320px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -25,6 +25,8 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  height: 64px;
+  padding: 12px 0;
 }
 
 /* details{
@@ -346,11 +348,25 @@ h5 {
   row-gap: 5px;
   text-decoration: none;
 }
-
-.PubPols:hover i {
-  background-color: black;
-  color: white;
+.fa-arrow-alt-circle-up{
+font-size:17px; 
+height:20px;
+width:20px;
+border-radius: 50%;
+background-color: rgb(131, 50, 236);
+color:white; 
+transform: rotate(45deg);
+justify-content: center;
+align-content: center;
+align-items: center;
 }
+
+.fa-arrow-alt-circle-up:hover {
+  background-color: white;
+  color: rgb(131, 50, 236);
+  border-radius: 50%;
+}
+
 
 .pTit {
   color: rgb(36, 38, 47);
@@ -404,15 +420,6 @@ h5 {
   row-gap: 30px;
 }
 
-.scrollBar {
-  width: 40px;
-  height: 40px;
-  background-color: rgb(110, 6, 242);
-  border-radius: 20%;
-  cursor: pointer;
-  border: none;
-}
-
 .wPlaces {
   display: flex;
   flex-direction: column;
@@ -422,6 +429,7 @@ h5 {
   padding: 0;
   position: relative;
   box-sizing: border-box;
+  
 }
 
 .cB {
@@ -433,10 +441,10 @@ h5 {
   font-weight: 500;
   color: rgb(36, 38, 47);
   line-height: 26.4px;
-  padding-left: 10px;
   -webkit-font-smoothing: antialiased;
   border-left: 2px solid rgb(36, 38, 47);
   padding: 12px;
+  
 }
 
 .cB:hover {
@@ -950,15 +958,6 @@ footer {
     display: grid;
     grid-template-rows: repeat(2, min-content);
     row-gap: 30px;
-  }
-
-  .scrollBar {
-    width: 40px;
-    height: 40px;
-    background-color: rgb(110, 6, 242);
-    border-radius: 20%;
-    cursor: pointer;
-    border: none;
   }
 
   .wPlaces {
