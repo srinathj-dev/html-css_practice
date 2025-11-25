@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="icon" href="https://img.icons8.com/scribby/50/checkmark.png" />
+  <link rel="icon" href="https://img.icons8.com/scribby/50/checkmark.png" />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,17 +18,25 @@
 <body>
   <div class="bodyClass">
     <header>
-      <div class="pHead">
-        <h4>SrinathJ<span>/Dev</span></h4>
+      <div>
+        <div class="">
+          <h4 class="pHead">SrinathJ<span>/Dev</span></h4>
+        </div>
       </div>
-      <nav>
-        <a href="index.html" class="default-nav">Home</a>
-        <a href="#aboutMe">About</a>
-        <a href="#projects">Projects</a>
-      </nav>
-      <a href="#contact">
+      <div class="threeMenu">
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navBar">
+          <a href="index.html" class="default-nav">Home</a>
+          <a href="#aboutMe">About</a>
+          <a href="#projectsTitle">Projects</a>
+          <a class="cName" href="#contact">contact</a>
+        </nav>
+      </div>
+      <a href="#contact" class="contact">
         <div class="contact" href="#contact"><img class="cImg"
-            src="https://framerusercontent.com/images/y7AJDvszhzacJVCt3lE8xkNyDY.svg" alt="contact icon missing"></div>
+            src="https://framerusercontent.com/images/y7AJDvszhzacJVCt3lE8xkNyDY.svg" alt="contact icon missing">
+        </div>
       </a>
     </header>
     <main>
@@ -49,7 +57,7 @@
             </p>
             <div class="btnRw">
               <a href="#contact" class="gITButton">Get In Touch</a>
-              <a href="#projects" class="projButton">Browse Projects</a>
+              <a href="#projectsTitle" class="projButton">Browse Projects</a>
             </div>
           </div>
           <div class="profImg">
@@ -60,7 +68,7 @@
         </section>
         <section class="pSection">
           <div>
-            <h2 class="projectsTitle">Projects<span>.</span></h2>
+            <h2 class="projectsTitle" id="projectsTitle">Projects<span>.</span></h2>
           </div>
           <div class="projects" id="projects">
             <div class="projPubPols">
@@ -70,17 +78,16 @@
               <div class="tittleDescrip">
                 <div class="PubPols">
                   <a href="#PublicPools" style="text-decoration: none; align-content: center; ">
-                    <div style="display: flex; align-items: center; column-gap: 8px; ">
+                    <div class="T-Project" style="display: flex; align-items: center; column-gap: 8px; ">
                       <div>
                         <h3 class="pTit">PublicPools</h3>
                       </div>
-                      <i class='far fa-arrow-alt-circle-up'
-                        style='font-size:20px; color:rgb(131, 50, 236); transform: rotate(45deg);'></i>
+                      <i class='far fa-arrow-alt-circle-up'></i>
                     </div>
                   </a>
                 </div>
                 <div>
-                  <p class="pDisc">public pools is used to know the public opinons</p>
+                  <h3 class="pDisc">public pools is used to know the public opinons</h3>
                 </div>
               </div>
             </div>
@@ -95,8 +102,7 @@
                       <div>
                         <h3 class="pTit">Count-NewsUsers & PosterUsers</h3>
                       </div>
-                      <i class='far fa-arrow-alt-circle-up'
-                        style='font-size:20px; color:rgb(131, 50, 236); transform: rotate(45deg);'></i>
+                      <i class='far fa-arrow-alt-circle-up'></i>
                     </div>
                   </a>
                 </div>
@@ -119,8 +125,7 @@
                       <div>
                         <h3 class="pTit">Music</h3>
                       </div>
-                      <i class='far fa-arrow-alt-circle-up'
-                        style='font-size:20px; color:rgb(131, 50, 236); transform: rotate(45deg);'></i>
+                      <i class='far fa-arrow-alt-circle-up'></i>
                     </div>
                   </a>
                 </div>
@@ -143,8 +148,7 @@
                       <div>
                         <h3 class="pTit">FoodExplorer</h3>
                       </div>
-                      <i class='far fa-arrow-alt-circle-up'
-                        style='font-size:20px; color:rgb(131, 50, 236); transform: rotate(45deg);'></i>
+                      <i class='far fa-arrow-alt-circle-up'></i>
                     </div>
                   </a>
                 </div>
@@ -164,17 +168,17 @@
           </div>
           <div class="wExp">
             <div class="wPlaces">
-              <div class="cB">
-                <p class="nPraja">PRAJA APP</p>
+              <div class="cB cB-active">
+                <a class="nPraja">PRAJA APP</a>
               </div>
               <div class="cB">
-                <p class="gEmp">Government Service</p>
+                <a class="gEmp">Government Service</a>
               </div>
               <div class="cB">
-                <p class="pI">Private Institution</p>
+                <a class="pI">Private Institution</a>
               </div>
               <div class="cB">
-                <p class="s">Serco</p>
+                <a class="s">Serco</a>
               </div>
             </div>
             <div class="wDone">
@@ -197,7 +201,7 @@
                           <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                       </div>
-                      <p>learnt about git <Span>&</Span>github, done 2 assignments </p>
+                      <p>learnt about git <span>&</span>github, done 2 assignments </p>
                     </div>
                   </div>
                   <div>
@@ -226,8 +230,10 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
         </section>
-        <section class="sec-skills">
+        <section class="secSkills">
           <div>
             <h2 class="skillsH">Skills<span>.</span></h2>
           </div>
@@ -238,16 +244,16 @@
               </div>
               <div class="wDP">
                 <div>
-                  <p>UI/UX Design</p>
+                  <p class="p-skills">UI/UX Design</p>
                 </div>
                 <div>
-                  <p>Responsive Design</p>
+                  <p class="p-skills">Responsive Design</p>
                 </div>
                 <div>
-                  <p>Wireframing</p>
+                  <p class="p-skills">Wireframing</p>
                 </div>
                 <div>
-                  <p>User Research</p>
+                  <p class="p-skills">User Research</p>
                 </div>
               </div>
             </div>
@@ -257,16 +263,16 @@
               </div>
               <div class="fP">
                 <div>
-                  <p>Javascript</p>
+                  <p class="p-skills">Javascript</p>
                 </div>
                 <div>
-                  <p>ReactJS</p>
+                  <p class="p-skills">ReactJS</p>
                 </div>
                 <div>
-                  <p>NextJS</p>
+                  <p class="p-skills">NextJS</p>
                 </div>
                 <div>
-                  <p>CSS3</p>
+                  <p class="p-skills">CSS3</p>
                 </div>
               </div>
             </div>
@@ -276,16 +282,16 @@
               </div>
               <div class="bP">
                 <div>
-                  <p>NodeJs</p>
+                  <p class="p-skills">NodeJs</p>
                 </div>
                 <div>
-                  <p>MondoDB</p>
+                  <p class="p-skills">MondoDB</p>
                 </div>
                 <div>
-                  <p>ExpressJS</p>
+                  <p class="p-skills">ExpressJS</p>
                 </div>
                 <div>
-                  <p>Vercel</p>
+                  <p class="p-skills">Vercel</p>
                 </div>
               </div>
             </div>
@@ -295,16 +301,16 @@
               </div>
               <div class="sSP">
                 <div>
-                  <p>Effective communication</p>
+                  <p class="p-skills">Effective communication</p>
                 </div>
                 <div>
-                  <p>Collaboration</p>
+                  <p class="p-skills">Collaboration</p>
                 </div>
                 <div>
-                  <p>Commitment</p>
+                  <p class="p-skills">Commitment</p>
                 </div>
                 <div>
-                  <p>Leadership</p>
+                  <p class="p-skills">Leadership</p>
                 </div>
               </div>
             </div>
@@ -329,29 +335,29 @@
       <div style="display: flex;">
         <nav class="fNav">
           <a href="index.html" class="default-nav">Home</a>
-          <a href="about.html">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#aboutMe">About</a>
+          <a href="#projectsTitle">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
       <div class="fbottom">
         <div class="ff">
           <div class="iiw">
-            <p>Intrested in working together<span>?</span></p>
+            <p>Interested in working together<span>?</span></p>
           </div>
           <div class="btnRw">
             <a href="#contact" class="gITButton">Get In Touch</a>
-            <a href="#projects" class="projButton">Browse Projects</a>
+            <a href="#projectsTitle" class="projButton">Browse Projects</a>
           </div>
         </div>
         <div class="copRights">
-          <div">
-            <p>©2023 All Rights Reserved.</p>
-            <p>Made with 💜 by Juluri Sai Srinath</p>
+          
+            <p class="cprights">©2025 All Rights Reserved.</p>
+            <p class="cprights">Made with 💜 by Juluri Sai Srinath</p>
+          
         </div>
       </div>
-  </div>
-  </footer>
+    </footer>
   </div>
 </body>
 
